@@ -27,7 +27,7 @@ yarn-error.log*
 .vscode
 
 # firebase
-.firebase
+.firebase/*
 .firebaserc
 firebase.json
 
@@ -39,3 +39,4 @@ public/2index.html
 
 
 
+.firebase/hosting.YnVpbGQ.cache
