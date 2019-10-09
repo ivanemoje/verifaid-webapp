@@ -31,12 +31,15 @@ yarn-error.log*
 .firebaserc
 firebase.json
 
-#misc
+# misc
 src/menu-items_orig.js
 src/Firebase/
 public/404.html
 public/2index.html
 
 
-
 .firebase/hosting.YnVpbGQ.cache
+
+# server
+server/node_modules
+# server/config.json
