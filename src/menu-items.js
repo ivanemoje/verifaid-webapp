@@ -97,82 +97,144 @@ export default {
         },
         {
             id: 'paymentinstructions_head',
-            title: 'Payment Instructions',
+            title: 'PAYMENT INSTRUCTIONS',
             type: 'group',
-            icon: 'icon-pages',
+            icon: 'icon-ui',
             children: [
-                               
                 {
                     id: 'paymentinstructions',
                     title: 'Payment Instructions',
                     type: 'collapse',
-                    icon: 'feather icon-menu',
+                    icon: 'feather icon-box',
                     children: [
+                    //    Memory leak in create and list CRN
+                        // {
+                        //     id: 'createcrns',
+                        //     title: 'Create CRN',
+                        //     type: 'item',
+                        //     url: 'basic/createcrns'
+                        // },
+                        // {
+                        //     id: 'listcrns',
+                        //     title: 'List CRNs',
+                        //     type: 'item',
+                        //     url: 'basic/listcrns',
+                        // },
                         {
-                            id: 'crns',
-                            title: 'Cash Release Notes',
-                            type: 'collapse',
-                            children: [
-                                {
-                                    id: 'createcrns',
-                                    title: 'Create CRN',
-                                    type: 'item',
-                                    url: 'basic/createcrns',
-                                },
-                                {
-                                    id: 'listcrns',
-                                    title: 'List CRNs',
-                                    type: 'item',
-                                    url: 'basic/listcrns',
-                                }
-                                
-                            ]
+                            id: 'crnceate',
+                            title: 'Create CRNs',
+                            type: 'item',
+                            url: '/basic/crncreate',
                         },
                         {
-                            id: 'paymentmemos',
-                            title: 'Payment Memos',
-                            type: 'collapse',
-                            children: [
-                                {
-                                    id: 'createpaymentmemos',
-                                    title: 'Create Payment Memo',
-                                    type: 'item',
-                                    url: '/basic/createpaymentmemos',
-                                },
-                                {
-                                    id: 'listpaymentmemos',
-                                    title: 'List Payment Memos',
-                                    type: 'item',
-                                    url: '/basic/listpaymentmemos',
-                                }
-                                
-                            ]
+                            id: 'crnlist',
+                            title: 'List CRNs',
+                            type: 'item',
+                            url: '/basic/crnlist',
                         },
                         {
-                            id: 'paymentrequests',
-                            title: 'Payment Requests',
-                            type: 'collapse',
-                            children: [
-                                {
-                                    id: 'createpaymentrequests',
-                                    title: 'Create Payment Requests',
-                                    type: 'item',
-                                    url: '/basic/createpaymentrequests',
-                                },
-                                {
-                                    id: 'listpaymentrequests',
-                                    title: 'List Payment Requests',
-                                    type: 'item',
-                                    url: '/basic/listpaymentrequests',
-                                }
-                                
-                            ]
+                            id: 'createpaymentmemos',
+                            title: 'Create Payment Memo',
+                            type: 'item',
+                            url: '/basic/createpaymentmemos',
+                        },
+                        {
+                            id: 'listpaymentmemos',
+                            title: 'List Payment Memos',
+                            type: 'item',
+                            url: '/basic/listpaymentmemos',
+                        },
+                        {
+                            id: 'createpaymentrequests',
+                            title: 'Create Payment Requests',
+                            type: 'item',
+                            url: '/basic/createpaymentrequests',
+                        },
+                        {
+                            id: 'listpaymentrequests',
+                            title: 'List Payment Requests',
+                            type: 'item',
+                            url: '/basic/listpaymentrequests',
                         }
                     ]
                 }
-               
             ]
-        }, 
+        },
+
+
+        // {
+        //     id: 'paymentinstructions_head',
+        //     title: 'Payment Instructions',
+        //     type: 'group',
+        //     icon: 'icon-pages',
+        //     children: [
+                               
+               
+        //                 {
+        //                     id: 'crns',
+        //                     title: 'Cash Release Notes',
+        //                     // icon: 'feather icon-menu',
+        //                     type: 'collapse',
+        //                     children: [
+        //                         {
+        //                             id: 'createcrns',
+        //                             title: 'Create CRN',
+        //                             type: 'item',
+        //                             url: 'basic/createcrns',
+        //                             breadcrumbs: false
+        //                         },
+        //                         {
+        //                             id: 'listcrns',
+        //                             title: 'List CRNs',
+        //                             type: 'item',
+        //                             url: 'basic/listcrns',
+        //                         }
+                                
+        //                     ]
+        //                 },
+        //                 {
+        //                     id: 'paymentmemos',
+        //                     title: 'Payment Memos',
+        //                     type: 'collapse',
+        //                     children: [
+        //                         {
+        //                             id: 'createpaymentmemos',
+        //                             title: 'Create Payment Memo',
+        //                             type: 'item',
+        //                             url: '/basic/createpaymentmemos',
+        //                         },
+        //                         {
+        //                             id: 'listpaymentmemos',
+        //                             title: 'List Payment Memos',
+        //                             type: 'item',
+        //                             url: '/basic/listpaymentmemos',
+        //                         }
+                                
+        //                     ]
+        //                 },
+        //                 {
+        //                     id: 'paymentrequests',
+        //                     title: 'Payment Requests',
+        //                     type: 'collapse',
+        //                     children: [
+        //                         {
+        //                             id: 'createpaymentrequests',
+        //                             title: 'Create Payment Requests',
+        //                             type: 'item',
+        //                             url: '/basic/createpaymentrequests',
+        //                         },
+        //                         {
+        //                             id: 'listpaymentrequests',
+        //                             title: 'List Payment Requests',
+        //                             type: 'item',
+        //                             url: '/basic/listpaymentrequests',
+        //                         }
+                                
+        //                     ]
+        //                 }
+        //             ]
+                
+        // }, 
         {
             id: 'reports',
             title: 'Reports',

@@ -17,13 +17,18 @@ const ManifestList = React.lazy(() => import('./Demo/UIElements/Basic/ManifestLi
 const PreCrn = React.lazy(() => import('./Demo/UIElements/Basic/PreCrn'));
 const Anomalies = React.lazy(() => import('./Demo/UIElements/Basic/Anomalies'));
 
-const CreateCrn = React.lazy(() => import('./Demo/UIElements/Basic/CreateCrn'));
-const ListCrn = React.lazy(() => import('./Demo/UIElements/Basic/ListCrn'));
+// const CreateCrn = React.lazy(() => import('./Demo/UIElements/Basic/CreateCrn'));
+// const ListCrn = React.lazy(() => import('./Demo/UIElements/Basic/ListCrn'));
+
+const CrnCreate2 = React.lazy(() => import('./Demo/UIElements/Basic/CrnCreate2'));
+const CRNList2 = React.lazy(() => import('./Demo/UIElements/Basic/CRNList2'));
+
 const CreatePaymentMemo = React.lazy(() => import('./Demo/UIElements/Basic/CreatePaymentMemo'));
 const ListPaymentMemo = React.lazy(() => import('./Demo/UIElements/Basic/ListPaymentMemo'));
 const CreatePaymentReq = React.lazy(() => import('./Demo/UIElements/Basic/CreatePaymentReq'));
 const ListPaymentReq = React.lazy(() => import('./Demo/UIElements/Basic/ListPaymentReq'));
 
+const GdtDdr = React.lazy(() => import('./Demo/UIElements/Basic/GdtDdr'));
 const GdtPdr = React.lazy(() => import('./Demo/UIElements/Basic/GdtPdr'));
 const BankPdr = React.lazy(() => import('./Demo/UIElements/Basic/BankPdr'));
 // const UIBasicBreadcrumbPagination = React.lazy(() => import('./Demo/UIElements/Basic/BreadcrumbPagination'));
@@ -67,16 +72,20 @@ const routes = [
     { path: '/basic/anomalies', exact: true, name: 'Find Anomalies', component: Anomalies },
 
 
-    { path: '/basic/createcrns', exact: true, name: 'Create CRN', component: CreateCrn },
-    { path: '/basic/listcrns', exact: true, name: 'List CRN', component: ListCrn },
+    // { path: '/basic/createcrns', exact: false, name: 'Create CRN', component: CreateCrn },
+    // { path: '/basic/listcrns', exact: false, name: 'List CRN', component: ListCrn },
+
+    { path: '/basic/crncreate', exact: true, name: 'Create CRN 2', component: CrnCreate2 },
+    { path: '/basic/crnlist', exact: true, name: 'List CRN 2', component: CRNList2 },
     { path: '/basic/createpaymentmemos', exact: true, name: 'Create Payment Memo', component: CreatePaymentMemo },
     { path: '/basic/listpaymentmemos', exact: true, name: 'List Payment Memo', component: ListPaymentMemo },
     { path: '/basic/createpaymentrequests', exact: true, name: 'Create Payment Req', component: CreatePaymentReq },
     { path: '/basic/listpaymentrequests', exact: true, name: 'List Payment Req', component: ListPaymentReq },
 
+    { path: '/basic/gdtddrs', exact: true, name: 'GDT PDRs', component: GdtDdr },
     { path: '/basic/gdtpdrs', exact: true, name: 'GDT PDRs', component: GdtPdr },
     { path: '/basic/bankpdrs', exact: true, name: 'Bank PDRs', component: BankPdr },
-    { path: '/basic/biometricanalysis', exact: true, name: 'Biometric Analysis', component: BiometricAnalysis },
+    { path: '/charts/biometricanalysis', exact: true, name: 'Biometric Analysis', component: BiometricAnalysis },
 
     { path: '/basic/uploadlist', exact: true, name: 'Upload List', component: UploadList },
     { path: '/basic/recon', exact: true, name: 'Reconciliation', component: Reconciliation },
@@ -89,7 +98,7 @@ const routes = [
 
     { path: '/changepassword', exact: true, name: 'Change Password', component: ChangePassword },
     { path: '/docs', exact: true, name: 'Documentation', component: Docs },
-    { path: '/  logout', exact: true, name: 'Log Out', component: LogOut },
+    { path: '/logout', exact: true, name: 'Log Out', component: LogOut },
 
 ];
 

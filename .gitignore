@@ -26,4 +26,15 @@ yarn-error.log*
 .workspace
 .vscode
 
+# firebase
+.firebaserc
+firebase.json
+
+#misc
+src/menu-items_orig.js
+src/Firebase/
+public/404.html
+public/2index.html
+
+
 
