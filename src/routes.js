@@ -17,12 +17,8 @@ const ManifestList = React.lazy(() => import('./Demo/UIElements/Basic/ManifestLi
 const PreCrn = React.lazy(() => import('./Demo/UIElements/Basic/PreCrn'));
 const Anomalies = React.lazy(() => import('./Demo/UIElements/Basic/Anomalies'));
 
-// const CreateCrn = React.lazy(() => import('./Demo/UIElements/Basic/CreateCrn'));
-// const ListCrn = React.lazy(() => import('./Demo/UIElements/Basic/ListCrn'));
-
 const CrnCreate2 = React.lazy(() => import('./Demo/UIElements/Basic/CrnCreate2'));
 const CRNList2 = React.lazy(() => import('./Demo/UIElements/Basic/CRNList2'));
-
 const CreatePaymentMemo = React.lazy(() => import('./Demo/UIElements/Basic/CreatePaymentMemo'));
 const ListPaymentMemo = React.lazy(() => import('./Demo/UIElements/Basic/ListPaymentMemo'));
 const CreatePaymentReq = React.lazy(() => import('./Demo/UIElements/Basic/CreatePaymentReq'));
@@ -31,16 +27,9 @@ const ListPaymentReq = React.lazy(() => import('./Demo/UIElements/Basic/ListPaym
 const GdtDdr = React.lazy(() => import('./Demo/UIElements/Basic/GdtDdr'));
 const GdtPdr = React.lazy(() => import('./Demo/UIElements/Basic/GdtPdr'));
 const BankPdr = React.lazy(() => import('./Demo/UIElements/Basic/BankPdr'));
-// const UIBasicBreadcrumbPagination = React.lazy(() => import('./Demo/UIElements/Basic/BreadcrumbPagination'));
-
-// const UIBasicCollapse = React.lazy(() => import('./Demo/UIElements/Basic/Collapse'));
-// const UIBasicTabsPills = React.lazy(() => import('./Demo/UIElements/Basic/TabsPills'));
-// const UIBasicBasicTypography = React.lazy(() => import('./Demo/UIElements/Basic/Typography'));
 
 const Reconciliation = React.lazy(() => import('./Demo/Forms/Reconciliation'));
 const UploadList = React.lazy(() => import('./Demo/Forms/UploadList'));
-
-// const BootstrapTable = React.lazy(() => import('./Demo/Tables/BootstrapTable'));
 
 const BiometricAnalysis = React.lazy(() => import('./Demo/Charts/BiometricAnalysis/index'));
 
@@ -49,9 +38,6 @@ const UserSettings = React.lazy(() => import('./Demo/UIElements/Basic/UserSettin
 const ReconChecks = React.lazy(() => import('./Demo/UIElements/Basic/ReconChecks'));
 const Settlements = React.lazy(() => import('./Demo/UIElements/Basic/Settlements'));
 const SystemLogs = React.lazy(() => import('./Demo/UIElements/Basic/SystemLogs'));
-
-
-// const GoogleMap = React.lazy(() => import('./Demo/Maps/GoogleMap/index'));
 
 const ChangePassword = React.lazy(() => import('./Demo/Other/ChangePassword'));
 const Docs = React.lazy(() => import('./Demo/Other/Docs'));
@@ -71,9 +57,6 @@ const routes = [
     { path: '/basic/precrn', exact: true, name: 'PreCRN', component: PreCrn },
     { path: '/basic/anomalies', exact: true, name: 'Find Anomalies', component: Anomalies },
 
-
-    // { path: '/basic/createcrns', exact: false, name: 'Create CRN', component: CreateCrn },
-    // { path: '/basic/listcrns', exact: false, name: 'List CRN', component: ListCrn },
 
     { path: '/basic/crncreate', exact: true, name: 'Create CRN 2', component: CrnCreate2 },
     { path: '/basic/crnlist', exact: true, name: 'List CRN 2', component: CRNList2 },
