@@ -7,7 +7,7 @@ global.jQuery = $;
 
 const DashboardDefault = React.lazy(() => import('./Demo/Dashboard/Default'));
 
-const BenList = React.lazy(() => import('./Demo/UIElements/Basic/BenList'));
+const BenSearch = React.lazy(() => import('./Demo/UIElements/Basic/BenSearch'));
 const SingleBenData = React.lazy(() => import('./Demo/UIElements/Basic/SingleBenData'));
 const BatchBenDataUNHCR = React.lazy(() => import('./Demo/UIElements/Basic/BatchBenDataUNHCR'));
 const BatchBenDataFSP = React.lazy(() => import('./Demo/UIElements/Basic/BatchBenDataFSP'));
@@ -47,7 +47,7 @@ const LogOut = React.lazy(() => import('./Demo/Other/LogOut'));
 const routes = [
     { path: '/dashboard', exact: true, name: 'Default', component: DashboardDefault },
 
-    { path: '/basic/benlist', exact: true, name: 'Ben List', component: BenList },
+    { path: '/basic/bensearch', exact: true, name: 'Ben List', component: BenSearch },
     { path: '/basic/singlebendata', exact: true, name: 'Single Ben Data', component: SingleBenData },
     { path: '/basic/batchbendataunhcr', exact: true, name: 'UNHCR Batch Data', component: BatchBenDataUNHCR },    
     { path: '/basic/batchbendatafsp', exact: true, name: 'FSP Batch Data', component: BatchBenDataFSP },    
