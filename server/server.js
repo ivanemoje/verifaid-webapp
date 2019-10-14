@@ -15,7 +15,7 @@ const all = require ('./controllers/all');
 
 const manifest = require ('./controllers/manifest');
 const searchben = require ('./controllers/searchben');
-
+const pdfcreation = require ('./controllers/pdfcreation');
 
 app.use (cors());
 
@@ -55,7 +55,7 @@ app.post('/addentry', (req, res) => { addentry.addEntry (req, res, db) })
 // VerifAID endpoints
 app.get('/allmanifests', (req, res) => { manifest.allManifests ( req, res , pool) })
 app.post('/searchben', (req, res) => { searchben.searchBen (req, res, pool) })
-
+app.post('/pdfcreation', (req, res) => { req.setTimeout(500000); pdfcreation.pdfCreation (req, res, pool) })
 
 
 
