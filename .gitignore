@@ -24,10 +24,11 @@ yarn-error.log*
 
 # vscode
 .workspace
+.code-workspace
 .vscode
 
 # firebase
-.firebase/*
+.firebase
 .firebaserc
 firebase.json
 
@@ -36,9 +37,6 @@ src/menu-items_orig.js
 src/Firebase/
 public/404.html
 public/2index.html
-
-
-.firebase/hosting.YnVpbGQ.cache
 
 # server
 server/node_modules
