@@ -28,10 +28,10 @@ export default {
                     icon: 'feather icon-box',
                     children: [
                         {
-                            id: 'benlist',
+                            id: 'bensearch',
                             title: 'Search Beneficiary Data',
                             type: 'item',
-                            url: '/basic/benlist'
+                            url: '/basic/bensearch'
                         },
                         {
                             id: 'singlebendata',
