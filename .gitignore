@@ -40,5 +40,6 @@ public/2index.html
 
 # server
 server/node_modules
+server/uploads
 server/config.json
 .firebase/hosting.YnVpbGQ.cache

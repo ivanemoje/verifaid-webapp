@@ -6,6 +6,7 @@
     "dependencies": {
         "axios": "^0.19.0",
         "bootstrap": "^4.3.1",
+        "concurrently": "^5.0.0",
         "font-awesome": "^4.7.0",
         "google-maps-react": "^2.0.2",
         "jquery": "^3.4.0",
@@ -29,7 +30,10 @@
         "redux": "^4.0.1"
     },
     "scripts": {
+        "client": "npm start -- --port 3003",
+        "server": "cd server && yarn start",
         "start": "PORT=3003 react-scripts start",
+
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject"
