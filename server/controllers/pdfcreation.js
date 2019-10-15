@@ -36,7 +36,21 @@ const pdfCreation = (req, res, pool) => {
     pool.query(query_run, function (error, results, fields) {
       if (error) throw error;
       if (results.length) {
-            res.json (results);
+            // res.json (results);
+            const doc = new PDFDocument()
+            let filename = 'manyanga';
+            // Stripping special characters
+            filename = filename + '.pdf'
+            // Setting response to 'attachment' (download).
+            // If you use 'inline' here it will automatically open the PDF
+            res.setHeader('Content-disposition', 'attachment; filename="' + filename + '"')
+            res.setHeader('Content-type', 'application/pdf')
+            const content = res.json (results)
+            doc.y = 300
+            doc.text(content, 50, 50)
+            fs.createWriteStream('/file.pdf')
+            doc.pipe(res)
+            doc.end()
             }
       else {
         res.status(404).json('Not found');
